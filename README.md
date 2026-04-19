@@ -70,3 +70,6 @@ Cells are grouped into clusters based on similarity in gene expression to identi
 Explanation:
 The final visualization shows how cells are grouped into clusters in 2D space for interpretation.
 
+ Conclusion
+
+In this analysis, a single-cell RNA sequencing dataset from 10x Genomics was processed using Scanpy. The dataset was first loaded and preprocessed, followed by quality control and normalization to ensure reliable expression values. Highly variable genes were selected to capture the most informative biological signals, and dimensionality reduction was performed using PCA. A nearest-neighbor graph was constructed to represent cell similarities, followed by UMAP for visualization in two dimensions. Leiden clustering was applied to group cells based on gene expression similarity, revealing distinct cell populations. Overall, this analysis successfully identified multiple transcriptionally distinct clusters, which likely represent different cell types within the sample.
