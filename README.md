@@ -16,6 +16,7 @@ Screenshots of preprocesing steps are attached.
 
 Explanation:
 This step loads the 10x Genomics single-cell RNA sequencing dataset into Scanpy as an AnnData object, which stores gene expression data along with cell and gene annotations.
+<img width="1600" height="853" alt="IMG-20260417-WA0004" src="https://github.com/user-attachments/assets/1709353e-b64d-4030-ad64-69da24c60366" />
 
 
 
@@ -31,6 +32,7 @@ This step filters low-quality cells and genes to remove noise from the dataset, 
 Explanation:
 Gene expression values are normalized to make cells comparable by removing differences caused by sequencing depth.
 
+<img width="678" height="117" alt="IMG-20260417-WA0011" src="https://github.com/user-attachments/assets/e8c0d234-e09c-440f-ac33-60dd13601dab" />
 
 
 4. Find Highly Variable Genes
@@ -38,6 +40,7 @@ Gene expression values are normalized to make cells comparable by removing diffe
 Explanation:
 This step selects the most informative genes that show strong variation across cells, which helps improve clustering and visualization.
 
+<img width="1149" height="248" alt="IMG-20260417-WA0012(1)" src="https://github.com/user-attachments/assets/d58b60f1-ac3a-43bf-8b98-d8b199ccaca5" />
 
 
  5. PCA (Dimensionality Reduction)
@@ -58,12 +61,14 @@ A nearest-neighbor graph is built to group similar cells based on their gene exp
 Explanation:
 UMAP is used to visualize high-dimensional single-cell data in 2D space while preserving cell relationships.
 
+<img width="1125" height="624" alt="IMG-20260417-WA0013(1)" src="https://github.com/user-attachments/assets/db7f9a86-cf69-45e8-956f-7a6a4429292b" />
 
  8. Leiden Clustering
 
 **Explanation:**
 Cells are grouped into clusters based on similarity in gene expression to identify potential cell types.
 
+<img width="1098" height="620" alt="IMG-20260417-WA0016(1)" src="https://github.com/user-attachments/assets/a596ab44-0484-46b2-b8f6-7211ae1cd2b1" />
 
  9. UMAP Plot
 
